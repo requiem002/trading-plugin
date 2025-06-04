@@ -1,6 +1,6 @@
 import csv
 import yfinance as yf
-import time
+
 
 YAHOO_TICKER_MAP = {
     "ULVR": "ULVR.L",    # Unilever PLC (London)
