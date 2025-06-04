@@ -1,0 +1,31 @@
+Slice,Name,Invested value,Value,Result,Owned quantity,Dividends gained,Dividends cash,Dividends reinvested
+JNJ,Johnson & Johnson,24.9,26.32,1.42,0.1746492,N/A,N/A,N/A
+PG,Procter & Gamble,20.07,21.29,1.22,0.1680885,N/A,N/A,N/A
+ULVR.L,Unilever,24.81,26.78,1.97,0.63629885,N/A,N/A,N/A
+SBUX,Starbucks,24.9,28.45,3.55,0.323156,N/A,N/A,N/A
+KO,Coca-Cola,24.08,23.52,-0.56,0.448467,N/A,N/A,N/A
+PEP,PepsiCo,24.08,24.02,-0.06,0.1609281,N/A,N/A,N/A
+CVX,Chevron,24.08,26.35,2.27,0.1784335,N/A,N/A,N/A
+PXD,Pioneer Natural Resources,16.06,15.02,-1.04,0.0784443,N/A,N/A,N/A
+MSFT,Microsoft,9.59,8.01,-1.58,0.0427491,N/A,N/A,N/A
+AAPL,Apple,20.89,16.33,-4.56,0.1549428,N/A,N/A,N/A
+CNQ,Canadian Natural Resources,12.05,11.54,-0.51,0.263261,N/A,N/A,N/A
+MMM,3M,12.05,12.14,0.09,0.1170901,N/A,N/A,N/A
+NVDA,NVIDIA,6.39,6.4,0.01,0.0532441,N/A,N/A,N/A
+KMB,Kimberly-Clark,12.05,12.65,0.6,0.1107413,N/A,N/A,N/A
+ADP,Automatic Data Processing,12.05,11.38,-0.67,0.0578045,N/A,N/A,N/A
+EMR,Emerson Electric,8.03,8.95,0.92,0.111837,N/A,N/A,N/A
+BBY,Best Buy,12.05,12.89,0.84,0.187718,N/A,N/A,N/A
+CRT,Cross Timbers Royalty Trust,12.05,13.1,1.05,0.660966,N/A,N/A,N/A
+TSLA,Tesla,8.85,3.33,-5.52,0.0357729,N/A,N/A,N/A
+ITW,Illinois Tool Works,8.03,8.42,0.39,0.0456696,N/A,N/A,N/A
+RKT,Reckitt Benckiser,8,7.19,-0.81,0.12339473,N/A,N/A,N/A
+PPG,PPG Industries,8.03,7.55,-0.48,0.0727398,N/A,N/A,N/A
+MDT,Medtronic,8.03,7.14,-0.89,0.105847,N/A,N/A,N/A
+NUE,Nucor,8.03,7.79,-0.24,0.0675252,N/A,N/A,N/A
+ADM,Archer-Daniels-Midland,8.03,7.45,-0.58,0.104866,N/A,N/A,N/A
+SHW,Sherwin-Williams,8.03,7.42,-0.61,0.0386762,N/A,N/A,N/A
+GWW,WW Grainger,8.03,7.33,-0.7,0.0161839,N/A,N/A,N/A
+LOW,Lowe's,8.03,7.76,-0.27,0.0458808,N/A,N/A,N/A
+WMT,Walmart,12.05,12.31,0.26,0.1019559,N/A,N/A,N/A
+ROP,Roper Technologies,8.03,8.33,0.3,0.0226645,N/A,N/A,N/A
