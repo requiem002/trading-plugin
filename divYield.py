@@ -1,11 +1,14 @@
 import csv
 import yfinance as yf
-
+import tkinter as tk
+from tkinter import filedialog, messagebox
 
 YAHOO_TICKER_MAP = {
     "ULVR": "ULVR.L",    # Unilever PLC (London)
     # Add more here if you get more 404s for EU/UK stocks (e.g. "SIE": "SIE.DE")
 }
+
+
 
 def get_dividend_yield(price, annual_dividend):
     if price == 0 or annual_dividend is None:
@@ -13,7 +16,22 @@ def get_dividend_yield(price, annual_dividend):
     return (annual_dividend / price) * 100
 
 def main():
-    filename = "piePortfolio.csv"
+    root = tk.Tk()
+    root.withdraw()
+    messagebox.showinfo(
+        "Welcome!",
+        "Welcome to the Portfolio Dividend Yield Calculator!\n\n"
+        "This tool helps you calculate your weighted average dividend yield from your Trading212 CSV export."
+    )
+
+
+    input("Press Enter to select your CSV file...")
+    filename = filedialog.askopenfilename(
+        title="Select your Trading212 CSV", filetypes=[("CSV files", "*.csv")]
+    )
+    if not filename:
+        print("No file selected. Exiting.")
+        return
     portfolio = []
     total_portfolio_value = 0
 
@@ -71,19 +89,22 @@ def main():
             weight = value / total_portfolio_value
             weighted_yield = stock_yield * weight
             total_weighted_yield += weighted_yield
-            #print(f"Total Weighted Yield: {total_weighted_yield}")
-            #time.sleep(1)
+
 
         except Exception as e:
             missing_tickers.append(ticker)
             print(f"error: {e}")
             continue
 
+    messagebox.showinfo("Dividend Yield", f"Weighted average dividend yield of your portfolio:\n{total_weighted_yield:.2f}%")
+        
     print(f"\nWeighted average dividend yield of your portfolio: {total_weighted_yield:.2f}%")
     if missing_tickers:
         print("\nCouldn't fetch dividend data for the following tickers:")
         for ticker in missing_tickers:
             print("-", ticker)
+    input("Press Enter to exit...")
+
 
 if __name__ == "__main__":
     main()
